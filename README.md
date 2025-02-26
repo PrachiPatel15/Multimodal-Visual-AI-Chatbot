@@ -6,8 +6,6 @@
 
 A sophisticated Streamlit application that performs comprehensive image analysis using multiple vision models and engages users in natural conversation about visual content.
 
-![Multimodal Visual AI Chatbot Demo](https://raw.githubusercontent.com/PrachiPatel15/Multimodal-Visual-AI-Chatbot/main/assets/demo.png)
-
 ## 🌟 Features
 
 - **Dual Model Image Analysis**: Leverages both BLIP and ViT-GPT2 models to provide comprehensive and diverse perspectives on image content
