@@ -1,3 +1,6 @@
+import nest_asyncio
+nest_asyncio.apply()
+
 import streamlit as st
 from transformers import (
     VisionEncoderDecoderModel, 
@@ -68,7 +71,8 @@ class ImprovedVisualChatbot:
             pixel_values,
             max_length=50,
             num_beams=4,
-            temperature=0.8
+            temperature=0.8,
+            do_sample=True
         )
         
         return self.vit_gpt2_tokenizer.decode(output_ids[0], skip_special_tokens=True)
@@ -81,7 +85,8 @@ class ImprovedVisualChatbot:
             **inputs,
             max_length=50,
             num_beams=4,
-            temperature=0.8
+            temperature=0.8,
+            do_sample=True
         )
         
         return self.blip_processor.decode(outputs[0], skip_special_tokens=True)
